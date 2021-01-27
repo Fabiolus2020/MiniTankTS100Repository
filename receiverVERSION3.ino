@@ -76,7 +76,7 @@ void loop() {
 
 
     // X-axis used for forward and backward control
-    if (data.joyposX > 600) {
+    if (data.joyposY > 600) {
       // Set Motor A backward
       digitalWrite(in1, HIGH);
       digitalWrite(in2, LOW);
@@ -87,7 +87,7 @@ void loop() {
       motorSpeedA = map(data.potValue, 1023, 0, 0, 255);
       motorSpeedB = map(data.potValue, 1023, 0, 0, 255);
     }
-    else if (data.joyposX < 400) {
+    else if (data.joyposY < 400) {
       // Set Motor A forward
       digitalWrite(in1, LOW);
       digitalWrite(in2, HIGH);
@@ -107,7 +107,7 @@ void loop() {
 
     // Y-axis used for left and right control
     //this is left
-    if (data.joyposY < 400) {
+    if (data.joyposX < 400) {
 
       // Set Motor A forward
       digitalWrite(in1, LOW);
@@ -122,7 +122,7 @@ void loop() {
     }
 
 
-    if (data.joyposY > 600) {
+    if (data.joyposX > 600) {
 
       // Set Motor A forward
       digitalWrite(in1, HIGH);
