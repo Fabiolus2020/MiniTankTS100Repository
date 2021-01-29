@@ -63,15 +63,15 @@ void modeOne()
       motordirection = 3;
 
       //Determine Motor Speeds
-      motorspeed1 = map(data.potValue, 470, 0, 0, 255);
-      motorspeed2 = map(data.potValue, 470, 0, 0, 255);
+      motorspeed1 = map(data.joyposY, 470, 0, 0, 255);
+      motorspeed2 = map(data.joyposY, 470, 0, 0, 255);
     }
     else if (data.joyposY > 600) {
             // This is right
       motordirection = 4;
       
-      motorspeed1 = map(data.potValue, 600, 0, 0, 255);
-      motorspeed2 = map(data.potValue, 600, 0, 0, 255);
+      motorspeed1 = map(data.joyposY, 600, 0, 0, 255);
+      motorspeed2 = map(data.joyposY, 600, 0, 0, 255);
       
     }
     else
