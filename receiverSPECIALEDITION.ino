@@ -88,18 +88,18 @@ void modeOne()
     if (motordirection == 1)
     {
       // Motors are forward
-      digitalWrite(in1, LOW);
-      digitalWrite(in2, HIGH);
-      digitalWrite(in3, LOW);
-      digitalWrite(in4, HIGH);
-    }
-    else  if (motordirection == 2)
-    {
-      // Motors are bacward
       digitalWrite(in1, HIGH);
       digitalWrite(in2, LOW);
       digitalWrite(in3, HIGH);
       digitalWrite(in4, LOW);
+    }
+    else  if (motordirection == 2)
+    {
+      // Motors are bacward
+      digitalWrite(in1, LOW);
+      digitalWrite(in2, HIGH);
+      digitalWrite(in3, LOW);
+      digitalWrite(in4, HIGH);
     }
 
     else  if (motordirection == 3)
@@ -207,22 +207,22 @@ void modeThree()
   // X-axis used for forward and backward control
   if (data.joyposX > 600) {
     // Set Motor A backward
-    digitalWrite(in1, HIGH);
-    digitalWrite(in2, LOW);
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, HIGH);
     // Set Motor B backward
-    digitalWrite(in3, HIGH);
-    digitalWrite(in4, LOW);
+    digitalWrite(in3, LOW);
+    digitalWrite(in4, HIGH);
     // Convert the declining Y-axis readings for going backward from 470 to 0 into 0 to 255 value for the PWM signal for increasing the motor speed
     motorSpeedA = map(data.potValue, 1023, 0, 0, 255);
     motorSpeedB = map(data.potValue, 1023, 0, 0, 255);
   }
   else if (data.joyposX < 400) {
     // Set Motor A forward
-    digitalWrite(in1, LOW);
-    digitalWrite(in2, HIGH);
+    digitalWrite(in1, HIGH);
+    digitalWrite(in2, LOW);
     // Set Motor B forward
-    digitalWrite(in3, LOW);
-    digitalWrite(in4, HIGH);
+    digitalWrite(in3, HIGH);
+    digitalWrite(in4, LOW);
     // Convert the increasing Y-axis readings for going forward from 550 to 1023 into 0 to 255 value for the PWM signal for increasing the motor speed
     motorSpeedA = map(data.potValue, 1023, 0, 0, 255);
     motorSpeedB = map(data.potValue, 1023, 0, 0, 255);
