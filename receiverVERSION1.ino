@@ -116,8 +116,8 @@ void loop()
             // This is right
       motordirection = 3;
       
-      motorspeed1 = map(data.potValue, 1023, 0, 0, 255);
-      motorspeed2 = map(data.potValue, 1023, 0, 0, 255);
+      motorspeed1 = map(data.potValue, 600, 0, 0, 255);
+      motorspeed2 = map(data.potValue, 600, 0, 0, 255);
       
     }
     else
