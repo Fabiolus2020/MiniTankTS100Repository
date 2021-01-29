@@ -8,15 +8,12 @@ RF24 myRadio(8, 9); // CE, CSN
 //address through which two modules communicate.
 const byte address[6] = "00001";
 
-
-
-
-
 struct package
 {
   int joyposX;
   int joyposY;
   int potValue;
+  int modeNow;
 };
 
 typedef struct package Package;
