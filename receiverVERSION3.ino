@@ -14,6 +14,7 @@ struct package
   int joyposX;
   int joyposY;
   int potValue;
+  int modeNow;
 };
 
 typedef struct package Package;
