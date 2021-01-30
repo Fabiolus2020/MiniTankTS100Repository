@@ -1,4 +1,4 @@
-# MiniTankTS100Repository
+# MiniTankT10 Smart Repository
 
 Youtube:
 https://youtu.be/L-Q4bE_ijFw
