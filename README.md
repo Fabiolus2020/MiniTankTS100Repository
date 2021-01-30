@@ -1,5 +1,8 @@
 # MiniTankTS100Repository
 
+Youtube:
+https://youtu.be/L-Q4bE_ijFw
+
 This repository is for the mini tank project
 
 sketch 1,2,3,4 connections are all the same.
