@@ -371,8 +371,8 @@ void loop() {
 
     // Serial.print("X : ");
     // Serial.println(data.joyposX);
-    Serial.print("Y : ");
-    Serial.println(data.joyposY);
+    //Serial.print("Y : ");
+    //Serial.println(data.joyposY);
     // Serial.print("potValue : ");
     //Serial.println(data.potValue);
     delay(10);
