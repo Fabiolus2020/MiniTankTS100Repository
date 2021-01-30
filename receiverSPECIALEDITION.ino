@@ -201,8 +201,8 @@ void modeThree()
     digitalWrite(in3, LOW);
     digitalWrite(in4, HIGH);
     // Convert the declining Y-axis readings for going backward from 470 to 0 into 0 to 255 value for the PWM signal for increasing the motor speed
-    motorSpeedA = map(data.potValue1, 1023, 0, 0, 255);
-    motorSpeedB = map(data.potValue1, 1023, 0, 0, 255);
+    motorSpeedA = map(data.potValue1, 0, 1023, 0, 255);
+    motorSpeedB = map(data.potValue1, 0, 1023, 0, 255);
   }
   else if (data.joyposX < 400) {
     // Set Motor A forward
@@ -212,8 +212,8 @@ void modeThree()
     digitalWrite(in3, HIGH);
     digitalWrite(in4, LOW);
     // Convert the increasing Y-axis readings for going forward from 550 to 1023 into 0 to 255 value for the PWM signal for increasing the motor speed
-    motorSpeedA = map(data.potValue1, 1023, 0, 0, 255);
-    motorSpeedB = map(data.potValue1, 1023, 0, 0, 255);
+    motorSpeedA = map(data.potValue1, 0, 1023, 0, 255);
+    motorSpeedB = map(data.potValue1, 0, 1023, 0, 255);
   }
   // If joystick stays in middle the motors are not moving
   else {
@@ -233,8 +233,8 @@ void modeThree()
     digitalWrite(in4, LOW);
 
     // Convert the increasing Y-axis readings for going forward from 550 to 1023 into 0 to 255 value for the PWM signal for increasing the motor speed
-    motorSpeedA = map(data.potValue1, 1023, 0, 0, 255);
-    motorSpeedB = map(data.potValue1, 1023, 0, 0, 255);
+    motorSpeedA = map(data.potValue1, 0, 1023, 0, 255);
+    motorSpeedB = map(data.potValue1, 0, 1023, 0, 255);
   }
 
   if (data.joyposY > 600) {
@@ -247,8 +247,8 @@ void modeThree()
     digitalWrite(in4, HIGH);
 
     // Convert the increasing Y-axis readings for going forward from 550 to 1023 into 0 to 255 value for the PWM signal for increasing the motor speed
-    motorSpeedA = map(data.potValue1, 1023, 0, 0, 255);
-    motorSpeedB = map(data.potValue1, 1023, 0, 0, 255);
+    motorSpeedA = map(data.potValue1, 0, 1023, 0, 255);
+    motorSpeedB = map(data.potValue1, 0, 1023, 0, 255);
   }
   // Prevent buzzing at low speeds (Adjust according to your motors. My motors couldn't start moving if PWM value was below value of 70)
   if (motorSpeedA < 70) {
@@ -273,8 +273,8 @@ void modeFour()
     digitalWrite(in3, LOW);
     digitalWrite(in4, HIGH);
     // Convert the declining Y-axis readings for going backward from 470 to 0 into 0 to 255 value for the PWM signal for increasing the motor speed
-    motorSpeedA = map(data.potValue1, 1023, 0, 0, 255);
-    motorSpeedB = map(data.potValue2, 1023, 0, 0, 255);
+    motorSpeedA = map(data.potValue1, 0, 1023, 0, 255);
+    motorSpeedB = map(data.potValue2, 0, 1023, 0, 255);
   }
   else if (data.joyposX < 400) {
     // Set Motor A forward
@@ -284,8 +284,8 @@ void modeFour()
     digitalWrite(in3, HIGH);
     digitalWrite(in4, LOW);
     // Convert the increasing Y-axis readings for going forward from 550 to 1023 into 0 to 255 value for the PWM signal for increasing the motor speed
-    motorSpeedA = map(data.potValue1, 1023, 0, 0, 255);
-    motorSpeedB = map(data.potValue2, 1023, 0, 0, 255);
+    motorSpeedA = map(data.potValue1, 0, 1023, 0, 255);
+    motorSpeedB = map(data.potValue2, 0, 1023, 0, 255);
   }
   // If joystick stays in middle the motors are not moving
   else {
@@ -305,8 +305,8 @@ void modeFour()
     digitalWrite(in4, LOW);
 
     // Convert the increasing Y-axis readings for going forward from 550 to 1023 into 0 to 255 value for the PWM signal for increasing the motor speed
-    motorSpeedA = map(data.potValue1, 1023, 0, 0, 255);
-    motorSpeedB = map(data.potValue2, 1023, 0, 0, 255);
+    motorSpeedA = map(data.potValue1, 0, 1023, 0, 255);
+    motorSpeedB = map(data.potValue2, 0, 1023, 0, 255);
   }
 
   if (data.joyposY > 600) {
@@ -319,8 +319,8 @@ void modeFour()
     digitalWrite(in4, HIGH);
 
     // Convert the increasing Y-axis readings for going forward from 550 to 1023 into 0 to 255 value for the PWM signal for increasing the motor speed
-    motorSpeedA = map(data.potValue1, 1023, 0, 0, 255);
-    motorSpeedB = map(data.potValue2, 1023, 0, 0, 255);
+    motorSpeedA = map(data.potValue1, 0, 1023, 0, 255);
+    motorSpeedB = map(data.potValue2, 0, 1023, 0, 255);
   }
   // Prevent buzzing at low speeds (Adjust according to your motors. My motors couldn't start moving if PWM value was below value of 70)
   if (motorSpeedA < 70) {
